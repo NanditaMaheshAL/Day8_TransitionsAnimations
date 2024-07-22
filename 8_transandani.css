@@ -1,0 +1,27 @@
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: darkcyan;
+    transition: width 1s ease-in-out, background-color 1s ease-in-out;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:hover {
+    width: 500px;
+    background-color: beige;
+}
+
+@keyframes slidein {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: maroon;
+    animation: slidein 1s forwards;
+}
